@@ -1,5 +1,5 @@
 """
-将 Tower_defects_detection_renew 数据集按三种比例和不同随机种子重新划分。
+将 Tower_defects_detection 数据集按三种比例和不同随机种子重新划分。
 
 划分配置:
   - 70/15/15, seed=42
@@ -19,8 +19,8 @@ import random
 from pathlib import Path
 
 # ============ 配置 ============
-SRC_DIR = Path("A:/ml_learning/data/Tower_defects_detection_renew")
-DST_DIR = Path("A:/ml_learning/data/Tower_3splits")
+SRC_DIR = Path("your_dataset_path")
+DST_DIR = Path("output_path")
 
 # 三个划分方案: (名称, train_ratio, val_ratio, test_ratio, seed)
 SPLITS = [
